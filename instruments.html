@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instruments — Robin's Private Music Centre</title>
+<meta name="description" content="Piano, violin, viola, cello, flute, acoustic and electric guitar, bass, drums and vocals — instrument programmes at Robin's Private Music Centre.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav-row">
+    <a class="brand" href="index.html">Robin's <em>Private Music Centre</em></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="about.html" data-page="about.html">About</a></li>
+        <li><a href="programmes.html" data-page="programmes.html">Programmes</a></li>
+        <li><a href="instruments.html" data-page="instruments.html">Instruments</a></li>
+        <li><a href="abrsm.html" data-page="abrsm.html">ABRSM</a></li>
+        <li><a href="conservatory.html" data-page="conservatory.html">Conservatory</a></li>
+        <li><a href="performances.html" data-page="performances.html">Performances</a></li>
+        <li><a href="faq.html" data-page="faq.html">FAQ</a></li>
+        <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="apply.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow-label">Our instruments</span>
+      <h1>Find your instrument. Build your craft.</h1>
+      <p class="lede">Structured instruction across ten instruments, each with a pathway from first lesson to certification.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="instruments-panel">
+        <div class="instrument-list" role="tablist" aria-label="Instruments" id="instrumentList"></div>
+        <div id="instrumentPanels"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-foot">Robin's Private Music Centre</div>
+        <p class="tag">Music. Discipline. Excellence.</p>
+        <p style="font-size:0.9rem; max-width:32ch; color:rgba(244,239,228,0.65);">Professional music education and performance in Windhoek, Namibia.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programmes.html">Music Programmes</a></li>
+          <li><a href="instruments.html">Instruments</a></li>
+          <li><a href="abrsm.html">ABRSM</a></li>
+          <li><a href="conservatory.html">Conservatory</a></li>
+          <li><a href="performances.html">Performances</a></li>
+          <li><a href="apply.html">Apply</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Programmes</h4>
+        <ul>
+          <li><a href="programmes.html">Initial Grading</a></li>
+          <li><a href="programmes.html">Standard Certification</a></li>
+          <li><a href="programmes.html">Premium Certification</a></li>
+        </ul>
+        <h4 style="margin-top:32px;">Performance</h4>
+        <ul>
+          <li><a href="performances.html">Cuatro Strings</a></li>
+          <li><a href="performances.html">District 7</a></li>
+          <li><a href="performances.html">Solo Musicians</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Instruments</h4>
+        <ul>
+          <li><a href="instruments.html?i=Piano">Piano</a></li>
+          <li><a href="instruments.html?i=Violin">Violin</a></li>
+          <li><a href="instruments.html?i=Drums">Drums</a></li>
+          <li><a href="instruments.html?i=Vocals">Vocals</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Robin's Private Music Centre. All rights reserved. &middot; Bessemer Street 8, Auas Valley, Windhoek, Namibia &middot; <a href="tel:+264812789198" style="color:inherit;">+264 81 278 9198</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply — Robin's Private Music Centre</title>
+<meta name="description" content="Apply to Robin's Private Music Centre — select an instrument and programme and begin your musical journey.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav-row">
+    <a class="brand" href="index.html">Robin's <em>Private Music Centre</em></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="about.html" data-page="about.html">About</a></li>
+        <li><a href="programmes.html" data-page="programmes.html">Programmes</a></li>
+        <li><a href="instruments.html" data-page="instruments.html">Instruments</a></li>
+        <li><a href="abrsm.html" data-page="abrsm.html">ABRSM</a></li>
+        <li><a href="conservatory.html" data-page="conservatory.html">Conservatory</a></li>
+        <li><a href="performances.html" data-page="performances.html">Performances</a></li>
+        <li><a href="faq.html" data-page="faq.html">FAQ</a></li>
+        <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="apply.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow-label">How it works</span>
+      <h1>Your journey starts here.</h1>
+      <div class="steps" style="margin-top:40px;">
+        <div class="step"><span class="stepnum">01</span><h4>Apply</h4><p>Complete our online application and select your preferred instrument.</p></div>
+        <div class="step"><span class="stepnum">02</span><h4>Assessment &amp; Placement</h4><p>We review the student's level and goals to determine the most suitable programme.</p></div>
+        <div class="step"><span class="stepnum">03</span><h4>Begin Training</h4><p>Students begin structured weekly lessons with their instructor.</p></div>
+        <div class="step"><span class="stepnum">04</span><h4>Develop</h4><p>Students build technical ability, musical knowledge, repertoire and confidence.</p></div>
+        <div class="step"><span class="stepnum">05</span><h4>Perform &amp; Progress</h4><p>Opportunities to perform, and to progress toward certification and advanced levels.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply-form">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow-label">Application</span>
+        <h2>Begin your musical journey.</h2>
+        <p class="lede">Your potential deserves the right environment. Complete the application and tell us about the student and the instrument they would like to study.</p>
+      </div>
+
+      <div class="form-shell">
+        <form id="applyForm" action="https://formsubmit.co/robinsmusiccentre@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New application — Robin's Private Music Centre">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_template" value="table">
+
+          <fieldset>
+            <legend>Student information</legend>
+            <div class="form-grid">
+              <div class="field"><label for="s_name">Student name</label><input type="text" id="s_name" name="Student Name" required></div>
+              <div class="field"><label for="s_surname">Surname</label><input type="text" id="s_surname" name="Surname" required></div>
+              <div class="field"><label for="s_dob">Date of birth</label><input type="date" id="s_dob" name="Date of Birth" required></div>
+              <div class="field">
+                <label for="s_gender">Gender</label>
+                <select id="s_gender" name="Gender" required>
+                  <option value="">Select</option>
+                  <option>Female</option><option>Male</option><option>Prefer not to say</option>
+                </select>
+              </div>
+              <div class="field"><label for="s_phone">Phone number</label><input type="tel" id="s_phone" name="Phone Number" required></div>
+              <div class="field"><label for="s_email">Email address</label><input type="email" id="s_email" name="Email Address" required></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Select your instrument</legend>
+            <div class="checkbox-grid">
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Piano"> Piano</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Violin"> Violin</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Viola"> Viola</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Cello"> Cello</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Flute"> Flute</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Acoustic Guitar"> Acoustic Guitar</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Electric Guitar"> Electric Guitar</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Bass Guitar"> Bass Guitar</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Drums"> Drums</label>
+              <label class="checkbox-item"><input type="checkbox" name="Instrument" value="Vocals"> Vocals</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Select your programme</legend>
+            <div class="checkbox-grid">
+              <label class="checkbox-item"><input type="radio" name="Programme" value="Initial Grading" required> Initial Grading</label>
+              <label class="checkbox-item"><input type="radio" name="Programme" value="Standard Certification"> Standard Certification</label>
+              <label class="checkbox-item"><input type="radio" name="Programme" value="Premium Certification"> Premium Certification</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Guardian information <span style="font-family:var(--sans); font-size:0.8rem; color:var(--mute); font-weight:400;">(for students under 18)</span></legend>
+            <div class="form-grid">
+              <div class="field"><label for="g_name">Guardian name</label><input type="text" id="g_name" name="Guardian Name"></div>
+              <div class="field"><label for="g_surname">Guardian surname</label><input type="text" id="g_surname" name="Guardian Surname"></div>
+              <div class="field"><label for="g_phone">Guardian phone number</label><input type="tel" id="g_phone" name="Guardian Phone Number"></div>
+              <div class="field"><label for="g_email">Guardian email</label><input type="email" id="g_email" name="Guardian Email"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your musical goals</legend>
+            <div class="field full">
+              <label for="goals">What do you hope to achieve through music?</label>
+              <textarea id="goals" name="Musical Goals" placeholder="e.g. Learn an instrument, prepare for ABRSM, prepare for professional performance..."></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+        </form>
+
+        <div class="form-success" id="applySuccess">
+          <h3>Application received.</h3>
+          <p>Thank you — our team will contact you regarding placement, scheduling and next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-foot">Robin's Private Music Centre</div>
+        <p class="tag">Music. Discipline. Excellence.</p>
+        <p style="font-size:0.9rem; max-width:32ch; color:rgba(244,239,228,0.65);">Professional music education and performance in Windhoek, Namibia.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programmes.html">Music Programmes</a></li>
+          <li><a href="instruments.html">Instruments</a></li>
+          <li><a href="abrsm.html">ABRSM</a></li>
+          <li><a href="conservatory.html">Conservatory</a></li>
+          <li><a href="performances.html">Performances</a></li>
+          <li><a href="apply.html">Apply</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Programmes</h4>
+        <ul>
+          <li><a href="programmes.html">Initial Grading</a></li>
+          <li><a href="programmes.html">Standard Certification</a></li>
+          <li><a href="programmes.html">Premium Certification</a></li>
+        </ul>
+        <h4 style="margin-top:32px;">Performance</h4>
+        <ul>
+          <li><a href="performances.html">Cuatro Strings</a></li>
+          <li><a href="performances.html">District 7</a></li>
+          <li><a href="performances.html">Solo Musicians</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Instruments</h4>
+        <ul>
+          <li><a href="instruments.html?i=Piano">Piano</a></li>
+          <li><a href="instruments.html?i=Violin">Violin</a></li>
+          <li><a href="instruments.html?i=Drums">Drums</a></li>
+          <li><a href="instruments.html?i=Vocals">Vocals</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Robin's Private Music Centre. All rights reserved. &middot; Bessemer Street 8, Auas Valley, Windhoek, Namibia &middot; <a href="tel:+264812789198" style="color:inherit;">+264 81 278 9198</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
