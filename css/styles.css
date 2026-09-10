@@ -64,7 +64,7 @@ section{padding:96px 0;}
 /* Nav */
 header{
   position:sticky; top:0; z-index:50;
-  background:rgba(255,255,255,0.92); backdrop-filter:blur(8px);
+  background:rgba(255,255,255,0.96);
   border-bottom:1px solid var(--line);
 }
 .nav-row{display:flex; align-items:center; justify-content:space-between; padding:16px 0;}
@@ -322,6 +322,18 @@ footer .logo-mark{width:26px; height:26px; filter:invert(1);}
 .hero-photo::after{content:''; position:absolute; inset:0; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);}
 .hero-badge{position:absolute; bottom:16px; right:16px; width:56px; height:56px; background:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 18px rgba(0,0,0,0.35);}
 .hero-badge img{width:34px; height:34px; object-fit:contain;}
+
+/* Full-bleed hero background photo (home) */
+.hero-photo-bg{position:relative; overflow:hidden; padding:130px 0 110px; color:#fff;}
+.hero-photo-bg .bg-layer{position:absolute; inset:0; z-index:0;}
+.hero-photo-bg .bg-layer img{width:100%; height:100%; object-fit:cover; object-position:center 25%; filter:grayscale(100%) contrast(1.2) brightness(0.7);}
+.hero-photo-bg .bg-layer::after{content:''; position:absolute; inset:0; background:linear-gradient(115deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.55) 42%, rgba(0,0,0,0.2) 75%);}
+.hero-photo-bg .wrap{position:relative; z-index:1;}
+.hero-photo-bg .eyebrow-label{color:#fff;}
+.hero-photo-bg .lede{color:rgba(255,255,255,0.85);}
+.hero-photo-bg h1{color:#fff;}
+.hero-photo-bg h1 i{color:#fff;}
+@media (max-width:640px){ .hero-photo-bg{padding:90px 0 70px;} }
 
 /* Photo strip grid (home) */
 .photo-strip{display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin-top:52px; border:1px solid var(--ink);}

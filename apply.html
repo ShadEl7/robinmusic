@@ -14,7 +14,7 @@
 <body>
 <header>
   <div class="wrap nav-row">
-    <a class="brand" href="index.html"><img class="logo-mark" src="images/logo-icon.jpg" alt="Robin's Private Music Centre logo">Robin's <em>Private Music Centre</em></a>
+    <a class="brand" href="index.html"><img class="logo-mark" src="images/logo-icon.jpg" alt="Robin's Private Music Centre logo"><span>Robin's <em>Private Music Centre</em></span></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -127,6 +127,13 @@
             </div>
           </fieldset>
 
+          <fieldset>
+            <label class="checkbox-item" style="align-items:flex-start; gap:10px;">
+              <input type="checkbox" name="Agreement" value="I have read and agree to the Terms and Conditions and Rules and Regulations" required style="margin-top:4px; flex-shrink:0;">
+              <span>I have read and agree to the <a href="terms.html" target="_blank" rel="noopener" style="text-decoration:underline;">Terms &amp; Conditions</a> and <a href="rules.html" target="_blank" rel="noopener" style="text-decoration:underline;">Rules &amp; Regulations</a> of Robin's Private Music Centre.</span>
+            </label>
+          </fieldset>
+
           <button type="submit" class="btn btn-primary">Submit Application</button>
         </form>
 
@@ -143,7 +150,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand-foot"><img class="logo-mark" src="images/logo-icon.jpg" alt="Robin's Private Music Centre logo">Robin's Private Music Centre</div>
+        <div class="brand-foot"><img class="logo-mark" src="images/logo-icon.jpg" alt="Robin's Private Music Centre logo"><span>Robin's Private Music Centre</span></div>
         <p class="tag">Music. Discipline. Excellence.</p>
         <p style="font-size:0.9rem; max-width:32ch; color:rgba(255,255,255,0.65);">Professional music education and performance in Windhoek, Namibia.</p>
       </div>
@@ -186,7 +193,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; <span id="year"></span> Robin's Private Music Centre. All rights reserved. &middot; Bessemer Street 8, Auas Valley, Windhoek, Namibia &middot; <a href="tel:+264812789198" style="color:inherit;">+264 81 278 9198</a>
+      &copy; <span id="year"></span> Robin's Private Music Centre. All rights reserved. &middot; Bessemer Street 8, Auas Valley, Windhoek, Namibia &middot; <a href="tel:+264812789198" style="color:inherit;">+264 81 278 9198</a><br>
+      <a href="terms.html" style="color:inherit; text-decoration:underline;">Terms &amp; Conditions</a> &middot; <a href="rules.html" style="color:inherit; text-decoration:underline;">Rules &amp; Regulations</a>
     </div>
   </div>
 </footer>
